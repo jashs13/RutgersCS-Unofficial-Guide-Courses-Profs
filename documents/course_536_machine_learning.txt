@@ -1,0 +1,102 @@
+================================================================
+COURSE PROFILE — 16:198:536
+Machine Learning
+Rutgers University MS CS Program
+================================================================
+
+COURSE CODE: 16:198:536
+COURSE NAME: Machine Learning
+CREDITS: 3
+MS CATEGORY: A or B (M.S.), B (Ph.D.) — AI/Machine Learning
+OFFERED: Spring
+OFFICIAL PAGE: https://www.cs.rutgers.edu/academics/graduate/m-s-program/course-synopses/course-details/16-198-536-machine-learning
+PREREQUISITES: 16:198:530 or 16:198:520 (Intro to AI)
+PROFESSOR COURSE SITE: https://people.cs.rutgers.edu/~elgammal/cs536.html
+
+NOTE ON PROFESSOR REVIEWS: Elgammal teaches both CS534 (undergrad computer vision/ML) and
+CS536 (grad machine learning). RMP reviews reference CS534 and CS336 — same professor,
+same teaching style, same workload concerns. Reviews below are directly applicable.
+
+PROFESSORS WHO TEACH THIS COURSE:
+- Ahmed Elgammal (primary — see professor_ahmed_elgammal.txt)
+
+================================================================
+SECTION 1 — OFFICIAL COURSE DESCRIPTION (from cs.rutgers.edu)
+================================================================
+
+An in-depth study of machine learning, to impart an understanding of the major topics in this
+area, the capabilities and limitations of existing methods, and research topics in this field.
+
+TOPICS:
+Inductive learning, including decision-tree and neural-network approaches, Bayesian methods,
+computational learning theory, instance-based learning, explanation-based learning,
+reinforcement learning, nearest neighbor methods, PAC-learning, inductive logic programming,
+genetic algorithms, unsupervised learning, linear and nonlinear dimensionality reduction,
+and kernel methods.
+
+================================================================
+SECTION 2 — WORKLOAD & GRADING (official + student-reported)
+================================================================
+
+HOMEWORK: Regular assignments; occasional quizzes (student-reported: numerous and difficult)
+EXAMS: Midterm + Final examination AND/OR course project
+PROJECTS: In-class presentations; possible semester project
+GRADING SCALE: Not published
+CURVE POLICY: Flexible on deadlines (student-reported); lenient grading per some reviews
+ESTIMATED WEEKLY HOURS: Heavy — students warn it can dominate the semester; ~10–15 hrs/week
+
+================================================================
+SECTION 3 — STUDENT REVIEWS (cross-referenced from Elgammal's RMP profile)
+================================================================
+
+Date: Jul 21, 2025 | Course: CS334 | Rating: 3/5 | Difficulty: 5/5
+"This class is so hard. The professor is very nice, though a little hard to understand.
+The content is just so hard and so math-heavy… I passed, which surprises even me, but I do
+not recommend if you don't like math or computer graphics/vision/ML."
+
+Date: May 12, 2025 | Course: CS334 | Rating: 5/5 | Difficulty: 1/5
+"Honestly, Elgammal is super caring and sweet, he truly wants students to succeed…
+Okay lecturer but gives enough materials to do well. Final and projects were not bad,
+midterm/quizzes are a bit harder. He is an AI researcher, so if you don't want to spend
+2 months on AI, don't take 334."
+
+Date: Apr 26, 2025 | Course: CS334 | Rating: 1/5 | Difficulty: 3/5
+"He made an announcement on Saturday that there would be a quiz in two days on Monday."
+[Note: surprise quiz complaints are recurring across multiple semesters]
+
+Date: Apr 28, 2023 | Course: CS534 | Rating: 2/5 | Difficulty: 5/5
+"DO NOT select this course unless you want to spend most of your whole semester time to
+finish this course's COUNTLESS and DIFFICULT homework/quiz."
+
+Date: Apr 14, 2022 | Course: CS534 | Rating: 5/5 | Difficulty: 3/5
+"Very knowledgeable and helpful professor. He is very flexible with assignment due dates
+and the grading was rather lenient… The only drawback was the lectures were 3 hours long."
+
+================================================================
+SECTION 4 — REDDIT DISCUSSION (r/rutgers)
+================================================================
+
+Thread: "An Open Letter to CS Majors" (r/rutgers, 2019)
+"Others, like Elgammal, are the complete opposite [of good, clear professors]."
+[One commenter cites him as an example of a professor students frequently complain about]
+
+================================================================
+SECTION 5 — GRADE DISTRIBUTION
+================================================================
+
+SOURCE: Student-reported via RMP
+- Lenient grading mentioned in positive reviews; flexible on deadlines
+- No hard curve data available — professor does not publish distribution
+- Math-heavy exams; some students surprised they passed
+
+================================================================
+SECTION 6 — TIPS & SURVIVAL NOTES
+================================================================
+
+- Do NOT take this course the same semester as another project-heavy course — it dominates your time
+- The math is real: linear algebra, probability, calculus are all active prerequisites, not just nice-to-haves
+- Elgammal is flexible on deadlines if you communicate — reach out proactively instead of going silent
+- Surprise quizzes have been reported — stay current with readings, don't fall behind
+- 3-hour lectures are mentally demanding; review notes same day
+- Prerequisite: must have completed CS520 or CS530 first — this builds directly on AI fundamentals
+- Pairs well with CS534 (Computer Vision) if you want to go deep on applied ML

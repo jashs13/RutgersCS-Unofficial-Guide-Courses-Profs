@@ -1,0 +1,106 @@
+================================================================
+PROFESSOR PROFILE — Ahmed Elgammal
+Rutgers University, Department of Computer Science
+================================================================
+
+NAME: Ahmed Elgammal
+TITLE: [e.g., Professor]
+RESEARCH AREAS: [e.g., Machine Learning, Computer Vision, AI Art Generation]
+DEPARTMENT PAGE URL: https://www.cs.rutgers.edu/people/professors
+PERSONAL SITE: https://sites.rutgers.edu/ahmed-elgammal/
+
+RMP PROFILE URL: https://www.ratemyprofessors.com/professor/184976
+RMP OVERALL RATING: [X.X / 5.0]
+RMP DIFFICULTY: [X.X / 5.0]
+RMP WOULD TAKE AGAIN: [XX%]
+RMP TOTAL RATINGS: [XX]
+
+COURSES KNOWN FOR TEACHING:
+- 16:198:536 — Machine Learning
+- 16:198:534 — Computer Vision
+- [any others found]
+
+================================================================
+SECTION 1 — STUDENT REVIEWS (Rate My Professors)
+Copy 6–10 verbatim reviews. Include date if shown. Keep both positive and negative.
+================================================================
+
+REVIEW 1:
+Date:
+Course:
+Rating: /5 | Difficulty: /5
+"[paste verbatim]"
+
+REVIEW 2:
+Date:
+Course:
+Rating: /5 | Difficulty: /5
+"[paste verbatim]"
+
+REVIEW 3:
+Date:
+Course:
+Rating: /5 | Difficulty: /5
+"[paste verbatim]"
+
+REVIEW 4:
+Date:
+Course:
+Rating: /5 | Difficulty: /5
+"[paste verbatim]"
+
+REVIEW 5:
+Date:
+Course:
+Rating: /5 | Difficulty: /5
+"[paste verbatim]"
+
+REVIEW 6:
+Date:
+Course:
+Rating: /5 | Difficulty: /5
+"[paste verbatim]"
+
+================================================================
+SECTION 2 — REDDIT MENTIONS (r/rutgers)
+Search: reddit.com/r/rutgers — query: "Elgammal" OR "CS 536 machine learning Rutgers" OR "machine learning grad Rutgers"
+Copy relevant excerpts. Include thread title, URL, and username if available.
+================================================================
+
+THREAD 1:
+Title:
+URL:
+Username:
+Date:
+Excerpt: "[paste relevant comment/post]"
+
+THREAD 2:
+Title:
+URL:
+Username:
+Date:
+Excerpt: "[paste relevant comment/post]"
+
+THREAD 3:
+Title:
+URL:
+Username:
+Date:
+Excerpt: "[paste relevant comment/post]"
+
+================================================================
+SECTION 3 — ADDITIONAL CONTEXT
+Any info from personal website, LinkedIn, or department bio.
+================================================================
+
+BIO / RESEARCH SUMMARY:
+[paste or summarize — note his AI art / creative AI research angle]
+
+COURSE WEBSITE (CS 536):
+https://people.cs.rutgers.edu/~elgammal/cs536.html
+
+OFFICE HOURS / CONTACT:
+[if publicly listed]
+
+NOTES:
+[anything else — e.g., known for heavy homework load, flexible on deadlines, etc.]

@@ -1,0 +1,115 @@
+================================================================
+COURSE PROFILE — 16:198:543
+Massive Data Storage, Retrieval and Deep Learning
+Rutgers University MS CS Program
+================================================================
+
+COURSE CODE: 16:198:543
+COURSE NAME: Massive Data Storage, Retrieval and Deep Learning
+CREDITS: 3
+MS CATEGORY: A or B (M.S.), B (Ph.D.) — Data Storage and Retrieval
+OFFERED: Fall only
+OFFICIAL PAGE: https://www.cs.rutgers.edu/academics/graduate/m-s-program/course-synopses/course-details/16-198-543-massive-data-storage-retrieval-and-deep-learning
+PREREQUISITES:
+  - CS512 (basic data structures & algorithms) or equivalent
+  - CS501 (mathematical foundations & probability)
+  - CS527 and/or CS539 (database foundations)
+  - Python, C++, Java, or Scala programming skills
+  - Prior Spark knowledge helpful but not required
+RELATED COURSES: CS541 (grad databases), CS539 (physical databases) — CS543 is more
+  systems-oriented and hands-on than both
+TEXTBOOKS:
+  - Deep Learning, From Basics to Practice (Glassner, 2018)
+  - Learning Spark (Karau et al., O'Reilly 2015)
+  - Mining of Massive Datasets (Leskovec, Rajaraman, Ullman — free at mmds.org)
+  - A Primer on Neural Network Models for NLP (Goldberg — free PDF)
+
+NOTE ON PROFESSOR REVIEWS: No specific professor reviews for CS543 were found via Deep
+Research or Reddit. Check the current schedule for who is teaching and search their RMP
+profile directly.
+
+PROFESSORS WHO TEACH THIS COURSE:
+- [Find on current schedule: https://www.cs.rutgers.edu/academics/graduate/m-s-program/graduate-courses-schedule]
+
+================================================================
+SECTION 1 — OFFICIAL COURSE DESCRIPTION (from cs.rutgers.edu)
+================================================================
+
+In today's world of massive amounts of data, new methods and techniques are needed to dive
+deeper into such data including hands-on practical work on real data sets. This course covers
+the major existing algorithmic primitives necessary for the processing of "massive" data sets
+in external memory and data streaming settings. It also introduces various deep learning
+frameworks and corresponding neural methods in a variety of application areas. Students have
+the opportunity to gain experience with major platforms for storage and retrieval, including
+Hadoop Distributed File Systems and Data Streaming with Apache Spark. The focus of one
+"large data" project is on techniques for information retrieval, natural language processing,
+and the necessary indexing methods for the retrieval of semantically relevant information.
+A second "large data" project focuses on the application of a deep learning framework to an
+application area of each student's choice.
+
+================================================================
+SECTION 2 — WORKLOAD & GRADING (official)
+================================================================
+
+MAIN REQUIREMENT: Semester-long course project (Apache Spark and/or Deep Learning)
+HOMEWORK: Related to course project; reading assignments throughout semester
+QUIZZES: Small in-class quizzes
+EXAMS: No traditional midterm/final listed — project-driven evaluation
+ESTIMATED WEEKLY HOURS: High — two large data projects + quizzes + readings; ~12–15 hrs/week
+TOOLS REQUIRED: Apache Spark, Hadoop HDFS, Python/Java/Scala, deep learning framework
+GPU ACCESS: May be needed for deep learning project — check Rutgers OARC cluster
+
+================================================================
+SECTION 3 — COURSE MODULE BREAKDOWN (from official syllabus)
+================================================================
+
+Module 1: Introduction to Massive Computing, MapReduce, Hadoop HDFS
+Module 2: Streaming Data & Apache Spark; NLP pipeline examples
+Module 3: Clustering and PageRank
+Module 4: External Memory Algorithms
+Module 5: Search & Storage — Inverted Indexes, ElasticSearch, Semantic Hashing, Vector Representations
+Module 6: Similarity Search, LSH (Locality Sensitive Hashing), Spatial Indexing
+Module 7: Deep Learning Principles — Gradient Descent, Backprop, Feedforward Networks, Activation Functions, Softmax
+Module 8: Deep Learning for Classification, Retrieval, and Labeling — CNNs for sentiment analysis,
+          text classification, neural IR, named entity recognition
+Module 9 (Selected Topics):
+  a. Language Models, RNNs, LSTMs, Seq2Seq
+  b. Semantic Analysis, Attention, Neural Machine Translation
+  c. Question Answering and Structured Data
+  d. Graph Streaming Algorithms
+
+================================================================
+SECTION 4 — STUDENT REVIEWS
+================================================================
+
+No student reviews specifically mentioning CS543 were found via Deep Research, RMP, or Reddit.
+To find reviews, search RMP for the professor currently listed in the schedule, and search
+r/rutgers for "CS543" or "massive data Rutgers".
+
+================================================================
+SECTION 5 — REDDIT DISCUSSION
+================================================================
+
+No relevant r/rutgers threads found for this course.
+
+================================================================
+SECTION 6 — GRADE DISTRIBUTION
+================================================================
+
+SOURCE: Not publicly available.
+STRUCTURE: Project-heavy — grade derived primarily from two large Spark/DL projects + quizzes
+
+================================================================
+SECTION 7 — TIPS & SURVIVAL NOTES
+================================================================
+
+- Fall only — plan your MS schedule accordingly; missing it means waiting a full year
+- Two large projects are the core of the course — one on IR/NLP with Spark, one on deep learning of your choice
+- The deep learning project is open-ended — choose an area you care about and it becomes a portfolio piece
+- Module 5 (vector representations, semantic hashing, ElasticSearch) is directly relevant to RAG systems
+  and modern ML engineering roles — pay close attention here
+- Spark setup can be painful — start the environment setup in Week 1, not Week 3
+- Strongly recommended to take CS527 (databases) before this course — it's listed as a prerequisite
+- Good GPU access tip: Rutgers provides OARC (Office of Advanced Research Computing) cluster access —
+  apply early in the semester for project compute resources
+- Pairs naturally with CS527 (prerequisite) and CS536 (ML) for a complete data + ML stack

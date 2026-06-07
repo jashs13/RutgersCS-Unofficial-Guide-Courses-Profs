@@ -1,0 +1,143 @@
+================================================================
+COURSE PROFILE — 16:198:513
+Design & Analysis of Data Structures and Algorithms I
+Rutgers University MS CS Program
+================================================================
+
+COURSE CODE: 16:198:513
+COURSE NAME: Design & Analysis of Data Structures and Algorithms I
+CREDITS: 3
+MS CATEGORY: A (M.S.), A (Ph.D.) — Algorithms & Complexity
+OFFERED: Fall | Spring
+OFFICIAL PAGE: https://www.cs.rutgers.edu/academics/graduate/m-s-program/course-synopses/course-details/16-198-513-design-and-analysis-of-data-structures-and-algorithms
+PREREQUISITES: For MS students, 16:198:512 is a pre-requisite. PhD students can register directly. Familiarity with Prim/Kruskal MST and Dijkstra shortest path.
+LEADS TO: CS514, CS522, CS538, CS541, CS550, CS580
+
+NOTE ON PROFESSOR REVIEWS: Rutgers uses the same professors for the graduate (16:198:513)
+and upper-level undergraduate (CS452 Computability & Complexity, CS344 Algorithms) theory
+courses. Reviews below from those courses reflect the same teaching style and content rigor
+students encounter in CS513.
+
+PROFESSORS WHO TEACH THIS COURSE:
+- Karthik Srikanta (algorithms/theory — see professor_karthik_srikanta.txt)
+- Mario Szegedy (theory/complexity — see professor_mario_szegedy.txt)
+
+================================================================
+SECTION 1 — OFFICIAL COURSE DESCRIPTION (from cs.rutgers.edu)
+================================================================
+
+Core material for Computer Science degree candidates. Discussion of representative algorithms
+and data structures encountered in applications.
+
+TOPICS:
+Worst case, average case, and amortized analysis. Data structures: search trees, hash tables,
+heaps, Fibonacci heaps, union-find. Algorithms: string matching, sorting and ordering
+statistics, graph algorithms. NP-completeness.
+
+================================================================
+SECTION 2 — WORKLOAD & GRADING (official)
+================================================================
+
+HOMEWORK: 6–7 homework assignments
+EXAMS: Midterm + Final examination
+PROJECTS: None listed
+GRADING SCALE: Not published (professor-dependent — see reviews below)
+CURVE POLICY: Varies by professor — Srikanta known to offer partial credit; Szegedy known for heavy final weighting
+ESTIMATED WEEKLY HOURS: Heavy — proof-heavy problem sets; student-reported 8–12 hrs/week
+
+================================================================
+SECTION 3 — STUDENT REVIEWS (cross-referenced from professor RMP reviews)
+================================================================
+
+SOURCE NOTE: These reviews reference CS452 (Computability & Complexity) and CS344 (Algorithms)
+at Rutgers — the undergraduate equivalents taught by the same professors. The proof-heavy,
+theory-first content is the same as what graduate students encounter in CS513.
+
+-- Reviews of Srikanta (CS452 / theory courses) --
+
+Date: May 16, 2025 | Course: CS452 | Rating: 1/5 | Difficulty: 5/5
+"Lectures are very disorganized; professor runs through proofs with varying levels of rigor
+and expects students to reproduce rigorous solutions on exams and homework. Little to no notes;
+resources outside lecture were AI-generated and incomprehensible. Grades are effectively exams only."
+
+Date: May 16, 2025 | Course: CS452 | Rating: 1/5 | Difficulty: 4/5
+"No online lecture notes, solutions to homework aren't posted, and he teaches like you are
+already familiar with most of the material… TA did most of the teaching for this class.
+Wasn't gonna post this review until he made a passive-aggressive announcement on Canvas to top it off."
+
+Date: May 16, 2025 | Course: CS452 | Rating: 3/5 | Difficulty: 4/5
+"Although the proofs were too much for me toward the end, prof at least made it very possible
+to pass a difficult course. I would just recommend for there to be more material for students
+to use to understand such rigorous proofs… things can get tough."
+
+Date: May 15, 2025 | Course: CS452 | Rating: 1/5 | Difficulty: 5/5
+"Incredibly disorganized, ridicules students, and provides zero help or solutions to homework
+or exams. No prep material either… expects far too much from undergrads… Genuinely the worst
+class I've taken @ Rutgers."
+
+Date: Jul 21, 2025 | Course: DISC205 | Rating: 5/5 | Difficulty: 3/5
+"I have heard horrible things about the people that teach this class, and Professor Karthik is
+not one of them. Easy A, not meant to fail you, basic trying is required. But pay attention to
+him, because CS 206 is not a joke."
+
+-- Reviews of Szegedy (CS344 / algorithms) --
+
+Date: Feb 14, 2026 | Course: ALGO | Rating: 5/5 | Difficulty: 2/5
+"I actually enjoyed his class. He also really tried to ensure that students learned the
+algorithms properly… he holds review sessions during his office hours and his practice exams
+are very similar to the actual exams. He's also brilliant in his field so it was cool to have him."
+
+Date: Jan 7, 2026 | Course: CS344 | Rating: 1/5 | Difficulty: 4/5
+"Barely came to class (including the final exam), made 'creative problems' on the exams even
+though he never even came to teach. Luckily, attendance was not mandatory, so better to self
+study or take another professor."
+
+Date: Dec 22, 2025 | Course: CS344 | Rating: 1/5 | Difficulty: 3/5
+"Bottom 3 profs in this department imo. Dull, uninteresting, practically a ghost when trying
+to reach out… worst final grade distribution… Final is worth 40%, be prepared to witness your
+final grade fall some letter grades at the end of the semester."
+
+Date: Dec 22, 2025 | Course: CS344 | Rating: 1/5 | Difficulty: 4/5
+"Difficult to follow and genuinely does not care at all. He was absent for half the semester
+and didn't even bother showing up for the final… Most stingy curve… Avoid and take Zhang instead."
+
+================================================================
+SECTION 4 — REDDIT DISCUSSION (r/rutgers)
+================================================================
+
+Thread: "01:198:452 Formal Language & Automata with Karthik Srikanta??"
+User: hillcenterenjoyer | Date: 2023
+"For CS 205, Discrete I: Exams: one midterm, one final… about 75% was reworded/altered hw
+and quiz problems… he literally told us what the questions were like… He had a curving policy…
+at least 30% of the class will get an A."
+
+Thread: "01:198:452 Formal Language & Automata with Karthik Srikanta??"
+User: TheYJatch | Date: 2023
+"He's great, really fair professor, had him for Discrete I this past sem."
+
+Thread: "How is Mario Szegedy for Comp Algo?" (r/rutgers)
+User: CellistInternational | Date: 2024
+"Good. You won't fail. Unless you don't try."
+
+Thread: "How is Mario Szegedy for Comp Algo?" (r/rutgers)
+User: Realistic_West_5862 | Date: 2024
+"nah bro wtf you mean. First day in class bro went off topic and gave the most bullshit assignment…"
+
+================================================================
+SECTION 5 — GRADE DISTRIBUTION
+================================================================
+
+SOURCE: Student-reported via RMP
+Srikanta: "at least 30% of the class will get an A" (per hillcenterenjoyer, r/rutgers)
+Szegedy: "worst final grade distribution… Final is worth 40%" — grade drop at end of semester common
+
+================================================================
+SECTION 6 — TIPS & SURVIVAL NOTES
+================================================================
+
+- Professor matters enormously for this course — check the schedule before registering
+- Srikanta: proof-heavy, disorganized lectures but lenient partial credit; use TA office hours heavily
+- Szegedy: brilliant but low engagement; self-study from CLRS or MIT OCW 6.006/6.046; practice exams match real exams
+- Course is proof-based — brushing up on mathematical induction, big-O notation, and graph theory before Day 1 is strongly recommended
+- 6–7 HW sets + midterm + final = no projects, but HW demands rigorous written proofs
+- Gateway to CS514 (Algorithms II), CS538 (Complexity), CS550 (Data Mining) — foundational

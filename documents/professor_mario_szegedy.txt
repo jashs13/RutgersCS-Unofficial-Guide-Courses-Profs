@@ -1,0 +1,102 @@
+================================================================
+PROFESSOR PROFILE — Mario Szegedy
+Rutgers University, Department of Computer Science
+================================================================
+
+NAME: Mario Szegedy
+TITLE: [e.g., Distinguished Professor]
+RESEARCH AREAS: [e.g., Theory of Computing, Quantum Computing, Complexity Theory]
+DEPARTMENT PAGE URL: https://www.cs.rutgers.edu/people/professors
+
+RMP PROFILE URL: https://www.ratemyprofessors.com/professor/52112
+RMP OVERALL RATING: [X.X / 5.0]
+RMP DIFFICULTY: [X.X / 5.0]
+RMP WOULD TAKE AGAIN: [XX%]
+RMP TOTAL RATINGS: [XX]
+
+COURSES KNOWN FOR TEACHING:
+- 16:198:509 — Foundations of Computer Science
+- 16:198:538 — Complexity of Computation
+- [any others found]
+
+================================================================
+SECTION 1 — STUDENT REVIEWS (Rate My Professors)
+Copy 6–10 verbatim reviews. Include date if shown. Keep both positive and negative.
+================================================================
+
+REVIEW 1:
+Date:
+Course:
+Rating: /5 | Difficulty: /5
+"[paste verbatim]"
+
+REVIEW 2:
+Date:
+Course:
+Rating: /5 | Difficulty: /5
+"[paste verbatim]"
+
+REVIEW 3:
+Date:
+Course:
+Rating: /5 | Difficulty: /5
+"[paste verbatim]"
+
+REVIEW 4:
+Date:
+Course:
+Rating: /5 | Difficulty: /5
+"[paste verbatim]"
+
+REVIEW 5:
+Date:
+Course:
+Rating: /5 | Difficulty: /5
+"[paste verbatim]"
+
+REVIEW 6:
+Date:
+Course:
+Rating: /5 | Difficulty: /5
+"[paste verbatim]"
+
+================================================================
+SECTION 2 — REDDIT MENTIONS (r/rutgers)
+Search: reddit.com/r/rutgers — query: "Szegedy" OR "complexity Rutgers" OR "CS 538"
+Copy relevant excerpts. Include thread title, URL, and username if available.
+================================================================
+
+THREAD 1:
+Title:
+URL:
+Username:
+Date:
+Excerpt: "[paste relevant comment/post]"
+
+THREAD 2:
+Title:
+URL:
+Username:
+Date:
+Excerpt: "[paste relevant comment/post]"
+
+THREAD 3:
+Title:
+URL:
+Username:
+Date:
+Excerpt: "[paste relevant comment/post]"
+
+================================================================
+SECTION 3 — ADDITIONAL CONTEXT
+Any info from personal website, LinkedIn, or department bio.
+================================================================
+
+BIO / RESEARCH SUMMARY:
+[paste or summarize]
+
+OFFICE HOURS / CONTACT:
+[if publicly listed]
+
+NOTES:
+[anything else relevant — e.g., known for abstract lectures, minimal feedback on assignments, etc.]

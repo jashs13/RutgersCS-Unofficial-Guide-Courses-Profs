@@ -1,0 +1,131 @@
+================================================================
+COURSE PROFILE — 16:198:520
+Introduction to Artificial Intelligence
+Rutgers University MS CS Program
+================================================================
+
+COURSE CODE: 16:198:520
+COURSE NAME: Introduction to Artificial Intelligence
+CREDITS: 3
+MS CATEGORY: B (M.S.), B (Ph.D.) — AI/Machine Learning
+OFFERED: Fall | Spring
+OFFICIAL PAGE: https://www.cs.rutgers.edu/academics/graduate/m-s-program/course-synopses/course-details/16-198-520-introduction-to-artificial-intelligence
+PREREQUISITES: None listed for MS students
+IMPORTANT NOTE: Credits cannot be combined with CS440. Students cannot count both
+CS520 and CS440 toward their MS/PhD degree — they are the same course at different levels.
+LEADS TO: 16:198:536 (Machine Learning), and several other AI/ML courses
+
+NOTE ON PROFESSOR REVIEWS: CS520 (grad Intro AI) and CS440 (undergrad Intro AI) are taught
+by the same professors and cover the same material. Rutgers explicitly states credits cannot
+be combined. All reviews of CS440 directly reflect the CS520 experience.
+
+PROFESSORS WHO TEACH THIS COURSE:
+- Abdeslam Boularias (highly rated — see professor_abdeslam_boularias.txt)
+- Casimir Kulikowski (controversial — see professor_casimir_kulikowski.txt)
+[Multiple professors rotate — check current semester schedule]
+
+================================================================
+SECTION 1 — OFFICIAL COURSE DESCRIPTION (from cs.rutgers.edu)
+================================================================
+
+Overview of artificial intelligence. Basic problems and methods; deductive inference,
+declarative programming, heuristic search; reasoning and representation in perception,
+planning, and learning.
+
+This course is a pre-requisite for several machine learning and AI courses.
+
+Credits for this course cannot be combined with 440. Students cannot get credit for both
+courses counting towards their MS/Ph.D. degrees.
+
+================================================================
+SECTION 2 — WORKLOAD & GRADING (student-reported, varies heavily by professor)
+================================================================
+
+HOMEWORK: Varies by professor — Boularias: moderate, Kulikowski: minimal/unclear
+EXAMS: Varies — Boularias: fair exams tied to lecture content; Kulikowski: exam material
+       sometimes not covered in lecture
+PROJECTS: Boularias assigns projects; Kulikowski grades on 2 assignments + project idea
+GRADING SCALE: Boularias: lenient, generous; Kulikowski: lenient but low substance
+CURVE POLICY: Boularias: standard; Kulikowski: easy A but little learning
+ESTIMATED WEEKLY HOURS: Boularias: ~6–8 hrs/week (worthwhile); Kulikowski: low effort required
+
+================================================================
+SECTION 3 — STUDENT REVIEWS (cross-referenced from CS440 RMP reviews)
+================================================================
+
+-- Boularias teaching CS440 / CS520 --
+
+Date: Mar 26, 2026 | Course: CS440 | Rating: 5/5 | Difficulty: 3/5
+"He's very passionate about the material and teaching. Answers all questions… encourages
+people to ask them… if the material was confusing… it was on him to explain it better
+which showcases how much he cares."
+
+Date: Jun 3, 2025 | Course: CS440 | Rating: 5/5 | Difficulty: 3/5
+"Prof. Boularias is refreshingly passionate. The material is definitely tough but very
+interesting… Brush up on your linear algebra, probability, and some calc. PARTICIPATE."
+
+Date: May 16, 2025 | Course: CS440 | Rating: 5/5 | Difficulty: 1/5
+"His care and dedication toward his students understanding is heartwarming. I've never had
+a professor who genuinely cares so much… Free A but soooooo much learned. He even wrote a
+sweet 'thank you' announcement at the end of the semester."
+
+Date: May 15, 2025 | Course: CS440 | Rating: 5/5 | Difficulty: 3/5
+"The best professor I have had at Rutgers. Lectures are very thorough and he really strives
+to make everyone understand. Very kind professor who genuinely cares about his students…
+grading is lenient. Prof is very accessible… Learned a lot… recommend."
+
+Date: Jan 2, 2025 | Course: CS440 | Rating: 4/5 | Difficulty: 3/5
+"he's very passionate about what he's teaching… he's chill and exams aren't bad, neither
+are the projects/homeworks."
+
+-- Kulikowski teaching CS440 / CS520 --
+
+Date: May 20, 2026 | Course: CS535 | Rating: 3/5 | Difficulty: 2/5
+"Dr. Kulikowski reminisces his work in the 1970s and rambles about it ad nauseam… he grades
+leniently. However, it is hard to say what I actually learned in the course. Propose a
+halfway interesting project idea… to do well."
+
+Date: May 17, 2025 | Course: CS440 | Rating: 1/5 | Difficulty: 2/5
+"easy A but don't take him if you actually want to learn something."
+
+Date: May 15, 2025 | Course: CS440 | Rating: 1/5 | Difficulty: 5/5
+"The class is graded on 2 assignments… The exams have almost no material to study and also
+the professor will put stuff not covered in class on the exam."
+
+Date: May 9, 2025 | Course: CS440 | Rating: 1/5 | Difficulty: 5/5
+"Might be the worst prof I have ever taken. Extremely disorganized, lectures were useless.
+Recitation was where you learned anything. He had no clue where the class was going…
+dropped an announcement the night before final. Do not take this professor."
+
+Date: Apr 24, 2025 | Course: CS440 | Rating: 1/5 | Difficulty: 5/5
+"Worst CS class ever taken. Man just rambles on while looking at one slide and expects us
+to know many things… Lectures give no information, slides are 50-90 slides long with
+confusing information."
+
+================================================================
+SECTION 4 — REDDIT DISCUSSION (r/rutgers)
+================================================================
+
+Thread: "Intro to AI final message from Prof. Boularias" (r/rutgers, ~2 years ago)
+User: snake227 — "He sounds so genuine."
+User: Vaxtin — "I had him this semester, he was great and obviously really cared about the
+material and wanted everyone to understand things."
+
+================================================================
+SECTION 5 — GRADE DISTRIBUTION
+================================================================
+
+SOURCE: Student-reported via RMP
+- Boularias: lenient grading, described as "Free A" by one student — but with genuine learning
+- Kulikowski: easy A as well, but purely for low effort — no substantive feedback
+
+================================================================
+SECTION 6 — TIPS & SURVIVAL NOTES
+================================================================
+
+- WHO teaches this course is the single most important variable — same content, wildly different experience
+- If Boularias is teaching: take it immediately, brush up on linear algebra and probability first
+- If Kulikowski is teaching: easy grade but you will not learn the AI foundations needed for CS536 (ML)
+- CS520 is a prerequisite for CS536 (Machine Learning) — take it seriously if ML is your goal
+- Topics: search (BFS/DFS/A*), constraint satisfaction, Bayesian networks, planning, intro ML — classical AI
+- Boularias encourages participation actively — sitting quietly is a missed opportunity

@@ -1,0 +1,111 @@
+================================================================
+COURSE PROFILE — 16:198:527
+Database Systems for Data Science
+Rutgers University MS CS Program
+================================================================
+
+COURSE CODE: 16:198:527
+COURSE NAME: Database Systems for Data Science
+CREDITS: 3
+MS CATEGORY: B (M.S.) — Data Storage and Retrieval
+OFFERED: Fall | Spring
+OFFICIAL PAGE: https://www.cs.rutgers.edu/academics/graduate/m-s-program/course-synopses/course-details/16-198-527-database-systems-for-data-science
+PREREQUISITES: Suitable for first-year MS students — no prior DB course required
+TEXTBOOKS:
+  - Database Management Systems, Ramakrishnan-Gerke, McGraw Hill, 3rd Ed. (2003)
+  - The Little MongoDB Book, Ch. Sesguin (free)
+  - NoSQL Databases, Christof Strauch (free, christof-strauch.de/nosqldbs)
+
+NOTE ON PROFESSOR REVIEWS: No professor reviews were found via Deep Research or RMP for
+the specific instructors of CS527. Check the current semester schedule and search the
+identified professor on RMP directly before enrolling.
+
+PROFESSORS WHO TEACH THIS COURSE:
+- [Find on current schedule: https://www.cs.rutgers.edu/academics/graduate/m-s-program/graduate-courses-schedule]
+
+================================================================
+SECTION 1 — OFFICIAL COURSE DESCRIPTION (from cs.rutgers.edu)
+================================================================
+
+Much of the world's data resides in databases. The purpose of this course is to introduce
+relational and NoSQL database concepts with emphasis on both theoretical and practical
+learning. This course helps students learn and apply knowledge of the SQL language and
+implementing components of relational and NoSQL database systems (DBMS). Students will
+create database instances in the cloud for both relational and NoSQL database systems such
+as MySQL, SQL Server, Amazon Redshift, Google BigQuery and MongoDB. Through a couple of
+hands-on projects students will practice building and running advanced SQL scripts and
+Python/Java code.
+
+================================================================
+SECTION 2 — WORKLOAD & GRADING (official)
+================================================================
+
+HOMEWORK / QUIZZES: 10% of grade
+PROJECTS: 40% — Two semester-long projects:
+  - Project 1: Take real or simulated data, build a full web application
+  - Project 2: Apply data cleaning techniques to large data + use MongoDB to extract insights
+  - Projects evaluated on both technical implementation AND utility/presentation
+EXAMS: Midterm + Final = 50% of grade
+GRADING SCALE: Not published (project-heavy weighting)
+ESTIMATED WEEKLY HOURS: Moderate-to-heavy — two parallel projects running all semester
+
+================================================================
+SECTION 3 — COURSE TOPIC BREAKDOWN (from official syllabus)
+================================================================
+
+Part I — Basics (Weeks 1–4)
+  - Database system design, ER Diagrams, Relational Model
+  - SQL: Building and querying a relational database
+  - Advanced SQL
+
+Part II — Applications (Weeks 5–6)
+  - Backend: AWS, JDBC, Java Servlets
+  - Frontend: JavaScript, JSON, HTML, CSS
+
+Part III — NoSQL Databases (Weeks 7–9)
+  - Key-Value Stores (Amazon Dynamo)
+  - Column-Oriented DBs (Google BigTable)
+  - Document DBs (Apache CouchDB, MongoDB)
+
+Part IV — Storage & Efficiency (Weeks 10–11)
+  - Storage, Indexing, Query Evaluation
+  - Writing efficient queries
+
+Part V — Databases in Real Life (Weeks 12–14)
+  - Partitioning, cloud storage, pricing models
+  - Data Cleansing
+  - Data Warehousing
+
+================================================================
+SECTION 4 — STUDENT REVIEWS
+================================================================
+
+No student reviews specifically mentioning CS527 were found via Deep Research, RMP, or Reddit.
+To find reviews, search RMP for the professor currently listed in the schedule, and search
+r/rutgers for "CS527" or "database systems Rutgers grad".
+
+================================================================
+SECTION 5 — REDDIT DISCUSSION
+================================================================
+
+No relevant r/rutgers threads found for this specific course.
+
+================================================================
+SECTION 6 — GRADE DISTRIBUTION
+================================================================
+
+SOURCE: Not publicly available.
+GRADING BREAKDOWN (official): Projects 40% | Exams 50% | HW/Quizzes 10%
+
+================================================================
+SECTION 7 — TIPS & SURVIVAL NOTES
+================================================================
+
+- First-year MS friendly — no DB prerequisites required
+- Two projects run all semester — start early, don't treat them as one-off assignments
+- Project 1 is a full web app with a database backend — expect to use AWS + SQL + a web framework
+- Project 2 involves real large data + MongoDB — useful hands-on experience for data engineering roles
+- SQL is heavily tested in exams — practice writing complex queries before the midterm
+- NoSQL section (MongoDB, BigTable, Dynamo) is industry-relevant and worth taking seriously
+- Pairs naturally with CS543 (Massive Data Storage) — together they cover the full data pipeline
+- Good course for Massive Data Analytics concentration students (required track course)
