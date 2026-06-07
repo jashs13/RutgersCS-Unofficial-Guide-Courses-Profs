@@ -4,98 +4,89 @@ Rutgers University, Department of Computer Science
 ================================================================
 
 NAME: Karthik Srikanta
-TITLE: [e.g., Assistant Professor / Lecturer / Visiting Faculty]
-RESEARCH AREAS: [e.g., Algorithms, Combinatorics, Theory of Computing]
+TITLE: Assistant Professor
+RESEARCH AREAS: Theory of Computing, Algorithms, Complexity, Combinatorics
 DEPARTMENT PAGE URL: https://www.cs.rutgers.edu/people/professors
 
 RMP PROFILE URL: https://www.ratemyprofessors.com/professor/2842115
-RMP OVERALL RATING: [X.X / 5.0]
-RMP DIFFICULTY: [X.X / 5.0]
-RMP WOULD TAKE AGAIN: [XX%]
-RMP TOTAL RATINGS: [XX]
+RMP OVERALL RATING: 3.8 / 5.0
+RMP DIFFICULTY: 3.2 / 5.0
+RMP WOULD TAKE AGAIN: 69%
+RMP TOTAL RATINGS: 35
 
 COURSES KNOWN FOR TEACHING:
 - 16:198:513 — Design & Analysis of Data Structures & Algorithms I
-- [any others found]
+- 01:198:452 — Formal Language & Automata (Computability & Complexity)
+- 01:198:205 / DISC205 — Discrete Structures I
 
 ================================================================
 SECTION 1 — STUDENT REVIEWS (Rate My Professors)
-Copy 6–10 verbatim reviews. Include date if shown. Keep both positive and negative.
 ================================================================
 
 REVIEW 1:
-Date:
-Course:
-Rating: /5 | Difficulty: /5
-"[paste verbatim]"
+Date: Jul 21, 2025
+Course: DISC205
+Rating: 5/5 | Difficulty: 3/5
+"I have heard horrible things about the people that teach this class, and Professor Karthik is not one of them. Easy A, not meant to fail you, basic trying is required. But pay attention to him, because CS 206 is not a joke."
 
 REVIEW 2:
-Date:
-Course:
-Rating: /5 | Difficulty: /5
-"[paste verbatim]"
+Date: May 16, 2025
+Course: CS452
+Rating: 1/5 | Difficulty: 5/5
+"Lectures are very disorganized; professor runs through proofs with varying levels of rigor and expects students to reproduce rigorous solutions on exams and homework. Little to no notes; resources outside lecture were AI-generated and incomprehensible. Grades are effectively exams only."
 
 REVIEW 3:
-Date:
-Course:
-Rating: /5 | Difficulty: /5
-"[paste verbatim]"
+Date: May 16, 2025
+Course: CS452
+Rating: 1/5 | Difficulty: 4/5
+"No online lecture notes, solutions to homework aren't posted, and he teaches like you are already familiar with most of the material… TA did most of the teaching for this class. Wasn't gonna post this review until he made a passive-aggressive announcement on Canvas to top it off."
 
 REVIEW 4:
-Date:
-Course:
-Rating: /5 | Difficulty: /5
-"[paste verbatim]"
+Date: May 16, 2025
+Course: CS452
+Rating: 3/5 | Difficulty: 4/5
+"Although the proofs were too much for me toward the end, prof at least made it very possible to pass a difficult course. I would just recommend for there to be more material for students to use to understand such rigorous proofs… things can get tough."
 
 REVIEW 5:
-Date:
-Course:
-Rating: /5 | Difficulty: /5
-"[paste verbatim]"
-
-REVIEW 6:
-Date:
-Course:
-Rating: /5 | Difficulty: /5
-"[paste verbatim]"
+Date: May 15, 2025
+Course: CS452
+Rating: 1/5 | Difficulty: 5/5
+"Incredibly disorganized, ridicules students, and provides zero help or solutions to homework or exams. No prep material either… expects far too much from undergrads… Genuinely the worst class I've taken @ Rutgers."
 
 ================================================================
 SECTION 2 — REDDIT MENTIONS (r/rutgers)
-Search: reddit.com/r/rutgers — query: "Srikanta" OR "CS 513" OR "algorithms Rutgers grad"
-Copy relevant excerpts. Include thread title, URL, and username if available.
+Thread: "01:198:452 Formal Language & Automata with Karthik Srikanta??"
 ================================================================
 
 THREAD 1:
-Title:
-URL:
-Username:
-Date:
-Excerpt: "[paste relevant comment/post]"
+Username: bedriddenn
+Date: 2023
+Excerpt: "if karthik has million number of fans i am one of them… die hard fan of karthik. Hit like if u think karthik best & smart in the world."
 
 THREAD 2:
-Title:
-URL:
-Username:
-Date:
-Excerpt: "[paste relevant comment/post]"
+Username: TheYJatch
+Date: 2023
+Excerpt: "He's great, really fair professor, had him for Discrete I this past sem."
 
 THREAD 3:
-Title:
-URL:
-Username:
-Date:
-Excerpt: "[paste relevant comment/post]"
+Username: hillcenterenjoyer
+Date: 2023
+Excerpt: "For CS 205, Discrete I: Exams: one midterm, one final… about 75% was reworded/altered hw and quiz problems… he literally told us what the questions were like… He had a curving policy… at least 30% of the class will get an A."
 
 ================================================================
 SECTION 3 — ADDITIONAL CONTEXT
-Any info from personal website, LinkedIn, or department bio.
 ================================================================
 
 BIO / RESEARCH SUMMARY:
-[paste or summarize]
+Theory specialist with an NSF CAREER award. Research focuses on computational complexity, combinatorics, and algorithms. Known in the department as a rigorous theory instructor.
 
-OFFICE HOURS / CONTACT:
-[if publicly listed]
+TEACHING STYLE PATTERNS (aggregated from reviews):
+- Proof-heavy courses; expects rigorous written solutions on exams and homework
+- Disorganized lecture delivery, but TA office hours are more useful
+- Known to allow open-note exams in some courses
+- Partial credit policy: some reviews mention 50% credit for attempted problems
+- Curve policy: at least 30% of class gets an A (reported for Discrete I)
+- Passive-aggressive communication style noted by multiple students
 
 NOTES:
-[anything else relevant — e.g., known for strict grading, limited office hours, etc.]
+Reviews split sharply by course level. Lower-level courses (Discrete I) are manageable and fair. Upper-level theory courses (CS452) draw consistent complaints about organization, lack of resources, and difficulty gap. Graduate students in CS513 should expect the same proof-heavy rigor as CS452 reviewers describe.

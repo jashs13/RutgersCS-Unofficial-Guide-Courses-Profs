@@ -4,99 +4,86 @@ Rutgers University, Department of Computer Science
 ================================================================
 
 NAME: Mario Szegedy
-TITLE: [e.g., Distinguished Professor]
-RESEARCH AREAS: [e.g., Theory of Computing, Quantum Computing, Complexity Theory]
+TITLE: Distinguished Professor
+RESEARCH AREAS: Computational Complexity Theory, Quantum Computing, Algorithms
 DEPARTMENT PAGE URL: https://www.cs.rutgers.edu/people/professors
 
 RMP PROFILE URL: https://www.ratemyprofessors.com/professor/52112
-RMP OVERALL RATING: [X.X / 5.0]
-RMP DIFFICULTY: [X.X / 5.0]
-RMP WOULD TAKE AGAIN: [XX%]
-RMP TOTAL RATINGS: [XX]
+RMP OVERALL RATING: 2.8 / 5.0
+RMP DIFFICULTY: 2.9 / 5.0
+RMP WOULD TAKE AGAIN: 17%
+RMP TOTAL RATINGS: 25
 
 COURSES KNOWN FOR TEACHING:
+- 16:198:513 — Design & Analysis of Data Structures & Algorithms I
 - 16:198:509 — Foundations of Computer Science
 - 16:198:538 — Complexity of Computation
-- [any others found]
+- 01:198:344 — Design & Analysis of Computer Algorithms (undergrad)
 
 ================================================================
 SECTION 1 — STUDENT REVIEWS (Rate My Professors)
-Copy 6–10 verbatim reviews. Include date if shown. Keep both positive and negative.
 ================================================================
 
 REVIEW 1:
-Date:
-Course:
-Rating: /5 | Difficulty: /5
-"[paste verbatim]"
+Date: Feb 14, 2026
+Course: ALGO
+Rating: 5/5 | Difficulty: 2/5
+"I actually enjoyed his class. He also really tried to ensure that students learned the algorithms properly… he holds review sessions during his office hours and his practice exams are very similar to the actual exams. He's also brilliant in his field so it was cool to have him."
 
 REVIEW 2:
-Date:
-Course:
-Rating: /5 | Difficulty: /5
-"[paste verbatim]"
+Date: Jan 7, 2026
+Course: CS344
+Rating: 1/5 | Difficulty: 4/5
+"Barely came to class (including the final exam), made 'creative problems' on the exams even though he never even came to teach. Luckily, attendance was not mandatory, so better to self study or take another professor."
 
 REVIEW 3:
-Date:
-Course:
-Rating: /5 | Difficulty: /5
-"[paste verbatim]"
+Date: Dec 22, 2025
+Course: CS344
+Rating: 1/5 | Difficulty: 3/5
+"Bottom 3 profs in this department imo. Dull, uninteresting, practically a ghost when trying to reach out… worst final grade distribution… Final is worth 40%, be prepared to witness your final grade fall some letter grades at the end of the semester."
 
 REVIEW 4:
-Date:
-Course:
-Rating: /5 | Difficulty: /5
-"[paste verbatim]"
+Date: Dec 22, 2025
+Course: CS344
+Rating: 1/5 | Difficulty: 4/5
+"Difficult to follow and genuinely does not care at all. He was absent for half the semester and didn't even bother showing up for the final… Most stingy curve… Avoid and take Zhang instead."
 
 REVIEW 5:
-Date:
-Course:
-Rating: /5 | Difficulty: /5
-"[paste verbatim]"
-
-REVIEW 6:
-Date:
-Course:
-Rating: /5 | Difficulty: /5
-"[paste verbatim]"
+Date: Dec 22, 2025
+Course: CS344
+Rating: 1/5 | Difficulty: 4/5
+"Really unreliable professor. He missed the first month of classes… lectures are okay, homework isn't too bad. But I wouldn't recommend him to anyone."
 
 ================================================================
 SECTION 2 — REDDIT MENTIONS (r/rutgers)
-Search: reddit.com/r/rutgers — query: "Szegedy" OR "complexity Rutgers" OR "CS 538"
-Copy relevant excerpts. Include thread title, URL, and username if available.
+Thread: "How is Mario Szegedy for Comp Algo?"
 ================================================================
 
 THREAD 1:
-Title:
-URL:
-Username:
-Date:
-Excerpt: "[paste relevant comment/post]"
+Username: CellistInternational
+Date: 2024
+Excerpt: "Good. You won't fail. Unless you don't try."
 
 THREAD 2:
-Title:
-URL:
-Username:
-Date:
-Excerpt: "[paste relevant comment/post]"
-
-THREAD 3:
-Title:
-URL:
-Username:
-Date:
-Excerpt: "[paste relevant comment/post]"
+Username: Realistic_West_5862
+Date: 2024
+Excerpt: "nah bro wtf you mean. First day in class bro went off topic and gave the most bullshit assignment…"
 
 ================================================================
 SECTION 3 — ADDITIONAL CONTEXT
-Any info from personal website, LinkedIn, or department bio.
 ================================================================
 
 BIO / RESEARCH SUMMARY:
-[paste or summarize]
+Distinguished Professor with multiple prestigious awards including ACM Paris Kanellakis Theory and Practice Award and NSF grants. Internationally recognized researcher in computational complexity and quantum computing. Despite elite research credentials, teaching reviews are overwhelmingly negative.
 
-OFFICE HOURS / CONTACT:
-[if publicly listed]
+TEACHING STYLE PATTERNS (aggregated from reviews):
+- Frequently absent from class, including missing his own final exam (multiple semesters reported)
+- Missed first month of classes in at least one semester (Dec 2025 reviews)
+- Final exam worth 40% of grade — major grade-drop risk at end of semester
+- "Creative problems" on exams with no lecture coverage to prepare
+- Stingiest curve in the department per student reports
+- Office hours exist and include review sessions; practice exams closely match real exams (per one positive review)
+- Self-study strongly recommended if enrolled
 
 NOTES:
-[anything else relevant — e.g., known for abstract lectures, minimal feedback on assignments, etc.]
+Only 17% of students would take him again — among the lowest in the department. The single positive review praises him when he does show up and holds office hours. The consistent pattern across negative reviews is unreliability and absence. Students who self-study from CLRS or MIT OCW 6.006/6.046 and use office hours report passing without issue.

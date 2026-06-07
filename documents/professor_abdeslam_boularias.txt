@@ -4,100 +4,84 @@ Rutgers University, Department of Computer Science
 ================================================================
 
 NAME: Abdeslam Boularias
-TITLE: [e.g., Associate Professor]
-RESEARCH AREAS: [e.g., Robotics, Reinforcement Learning, AI Planning]
+TITLE: Associate Professor
+RESEARCH AREAS: Robotics, Reinforcement Learning, AI Planning, Robot Perception
 DEPARTMENT PAGE URL: https://www.cs.rutgers.edu/people/professors
 
 RMP PROFILE URL: https://www.ratemyprofessors.com/professor/2041187
-RMP OVERALL RATING: [X.X / 5.0]
-RMP DIFFICULTY: [X.X / 5.0]
-RMP WOULD TAKE AGAIN: [XX%]
-RMP TOTAL RATINGS: [XX]
+RMP OVERALL RATING: 4.8 / 5.0
+RMP DIFFICULTY: 3.0 / 5.0
+RMP WOULD TAKE AGAIN: 97%
+RMP TOTAL RATINGS: 32
 
 COURSES KNOWN FOR TEACHING:
+- 16:198:520 — Introduction to Artificial Intelligence (graduate)
+- 01:198:440 — Introduction to AI (undergraduate)
 - 16:198:560 — Introduction to Computational Robotics
 - 16:198:562 — Advanced Robotics
-- 16:198:520 — Introduction to Artificial Intelligence (if confirmed)
-- [any others found]
 
 ================================================================
 SECTION 1 — STUDENT REVIEWS (Rate My Professors)
-Copy 6–10 verbatim reviews. Include date if shown. Keep both positive and negative.
 ================================================================
 
 REVIEW 1:
-Date:
-Course:
-Rating: /5 | Difficulty: /5
-"[paste verbatim]"
+Date: Mar 26, 2026
+Course: CS440
+Rating: 5/5 | Difficulty: 3/5
+"He's very passionate about the material and teaching. Answers all questions… encourages people to ask them… if the material was confusing… it was on him to explain it better which showcases how much he cares."
 
 REVIEW 2:
-Date:
-Course:
-Rating: /5 | Difficulty: /5
-"[paste verbatim]"
+Date: Jun 3, 2025
+Course: CS440
+Rating: 5/5 | Difficulty: 3/5
+"Prof. Boularias is refreshingly passionate. The material is definitely tough but very interesting… Brush up on your linear algebra, probability, and some calc. PARTICIPATE."
 
 REVIEW 3:
-Date:
-Course:
-Rating: /5 | Difficulty: /5
-"[paste verbatim]"
+Date: May 16, 2025
+Course: CS440
+Rating: 5/5 | Difficulty: 1/5
+"His care and dedication toward his students understanding is heartwarming. I've never had a professor who genuinely cares so much… Free A but soooooo much learned. He even wrote a sweet 'thank you' announcement at the end of the semester."
 
 REVIEW 4:
-Date:
-Course:
-Rating: /5 | Difficulty: /5
-"[paste verbatim]"
+Date: May 15, 2025
+Course: CS440
+Rating: 5/5 | Difficulty: 3/5
+"The best professor I have had at Rutgers. Lectures are very thorough and he really strives to make everyone understand. Very kind professor who genuinely cares about his students… grading is lenient. Prof is very accessible… Learned a lot… recommend."
 
 REVIEW 5:
-Date:
-Course:
-Rating: /5 | Difficulty: /5
-"[paste verbatim]"
-
-REVIEW 6:
-Date:
-Course:
-Rating: /5 | Difficulty: /5
-"[paste verbatim]"
+Date: Jan 2, 2025
+Course: CS440
+Rating: 4/5 | Difficulty: 3/5
+"he's very passionate about what he's teaching… he's chill and exams aren't bad, neither are the projects/homeworks."
 
 ================================================================
 SECTION 2 — REDDIT MENTIONS (r/rutgers)
-Search: reddit.com/r/rutgers — query: "Boularias" OR "robotics Rutgers grad" OR "CS 560 Rutgers"
-Copy relevant excerpts. Include thread title, URL, and username if available.
+Thread: "Intro to AI final message from Prof. Boularias" (r/rutgers, ~2 years ago)
 ================================================================
 
 THREAD 1:
-Title:
-URL:
-Username:
-Date:
-Excerpt: "[paste relevant comment/post]"
+Username: snake227
+Excerpt: "He sounds so genuine."
 
 THREAD 2:
-Title:
-URL:
-Username:
-Date:
-Excerpt: "[paste relevant comment/post]"
-
-THREAD 3:
-Title:
-URL:
-Username:
-Date:
-Excerpt: "[paste relevant comment/post]"
+Username: Vaxtin
+Excerpt: "I had him this semester, he was great and obviously really cared about the material and wanted everyone to understand things."
 
 ================================================================
 SECTION 3 — ADDITIONAL CONTEXT
-Any info from personal website, LinkedIn, or department bio.
 ================================================================
 
 BIO / RESEARCH SUMMARY:
-[paste or summarize]
+Associate Professor with NSF CAREER award. Research focuses on robot learning, manipulation, and AI planning under uncertainty. Known within the department as one of the most student-centered professors. Students post his end-of-semester messages to Reddit because they find them genuinely moving.
 
-OFFICE HOURS / CONTACT:
-[if publicly listed]
+TEACHING STYLE PATTERNS (aggregated from reviews):
+- Exceptionally passionate and caring — consistent across all 32 ratings
+- Takes responsibility when material is confusing ("it was on him to explain it better")
+- Actively encourages questions and participation during lecture
+- Lenient grading; accessible on Piazza and email
+- Exams and projects are fair and tied to what was taught
+- Wrote a "thank you" announcement to students at semester end — noted by multiple reviewers
+- Requires linear algebra, probability, and basic calculus as working knowledge
 
 NOTES:
-[anything else — e.g., highly accessible on Piazza/email, thorough in lectures, etc.]
+97% would take again — the highest in this profile set by a wide margin. Boularias is the consensus best professor for CS440/CS520 at Rutgers. If he is listed as instructor for Intro to AI in the semester you're enrolling, take it. The course is genuinely challenging (classical AI: search, CSP, Bayesian networks, planning) but his teaching makes the difficulty feel worthwhile. For MS students, this is the version of CS520 that actually prepares you for CS536 (Machine Learning).
