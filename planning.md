@@ -35,32 +35,31 @@ Student reviews and course information for the MS CS program at Rutgers Universi
 
 ## Chunking Strategy
 
-<!-- How will you split documents into chunks?
-     State your chunk size (in tokens or characters), overlap size, and explain why those
-     numbers fit the structure of your documents.
-     A review-heavy corpus warrants different chunking than a long FAQ. -->
+**Chunk size:** 500 characters
 
-**Chunk size:**
-
-**Overlap:**
+**Overlap:** 100 characters
 
 **Reasoning:**
+The corpus contains two distinct content types: short opinion reviews (150–300 characters each) and longer structured content like official course descriptions and workload breakdowns (400–600 characters). A 500-character chunk is large enough to capture one complete review plus a line of surrounding context (e.g., professor name and course), which is necessary for the embedding to be semantically meaningful — a review like "Lectures are very disorganized" is only useful if the chunk also contains "Karthik Srikanta" or "CS513." It is small enough that unrelated reviews don't merge into a single blob that would match too many queries indiscriminately.
+
+Overlap of 100 characters handles the case where a multi-sentence review straddles a chunk boundary — without overlap, the second half of such a review would be an orphaned fragment with no context.
+
+Before chunking, section dividers (`===`) and structural labels (`SECTION 1 —`, `Date: | Course: | Rating:`) will be stripped to prevent noise tokens from dominating chunk embeddings. Each chunk will be tagged with metadata: source filename and chunk index, so retrieved results can be traced back to a specific professor or course document.
 
 ---
 
 ## Retrieval Approach
 
-<!-- Which embedding model are you using (e.g., all-MiniLM-L6-v2 via sentence-transformers)?
-     How many chunks will you retrieve per query (top-k)?
-     If you were deploying this for real users and cost wasn't a constraint, what tradeoffs
-     would you weigh in choosing a different embedding model — context length, multilingual
-     support, accuracy on domain-specific text, latency? -->
+**Embedding model:** `all-MiniLM-L6-v2` via `sentence-transformers`
 
-**Embedding model:**
+**Top-k:** 5
 
-**Top-k:**
+**Why these choices:** `all-MiniLM-L6-v2` produces 384-dimensional embeddings, handles short opinion text well, and fits within its 512-token limit comfortably given our 500-character chunk size. It is fast enough for a local prototype with a small corpus (~100–150 total chunks across 10 documents). The vector store is ChromaDB with cosine similarity.
+
+Top-k of 5 retrieves approximately 2,500 characters of context per query — enough for the LLM to synthesize an answer that draws from both a professor file and its corresponding course file (e.g., retrieving both Boularias's teaching style and CS520's official description for a question about that course). Setting top-k lower (2–3) risks missing relevant context when a question spans multiple documents; setting it higher (10+) risks pulling in loosely related chunks from other professors or courses that dilute the answer.
 
 **Production tradeoff reflection:**
+In a real deployment, I would consider `text-embedding-3-small` (OpenAI) or `instructor-xl` for better semantic capture of domain-specific terminology — phrases like "NP-completeness," "PAC-learning," or "Bayesian networks" are treated as unknown tokens by general-purpose small models. I would also evaluate whether the undergrad/grad course code mismatch (CS440 vs. 16:198:520) degrades recall, and consider a hybrid retrieval approach (BM25 + semantic) to catch exact course code matches that pure embedding search misses. Latency is not a constraint for this prototype since it runs locally, but a hosted API embedding model would be faster for real users at scale.
 
 ---
 
@@ -83,23 +82,45 @@ Student reviews and course information for the MS CS program at Rutgers Universi
 
 ## Anticipated Challenges
 
-<!-- What could go wrong? Name at least two specific risks with reasoning.
-     Consider: noisy or inconsistent documents, missing source attribution, off-topic
-     retrieval, chunks that split key information across boundaries. -->
+1. **Structural noise embedded as signal.** The documents contain section dividers (`===`), metadata labels (`RMP OVERALL RATING:`, `Date: | Course: | Rating:`), and instructional comments that were part of the template. If these are not stripped before chunking, the embedding model will treat them as content. A chunk containing mostly `================================================================` and `SECTION 2 — WORKLOAD & GRADING (official)` will have a meaningless embedding that could surface for unrelated queries. Mitigation: write a preprocessing step that strips lines matching divider patterns before passing text to the chunker.
 
-1.
-
-2.
+2. **Undergraduate/graduate course code mismatch degrades recall.** All five professor review files contain reviews that reference undergraduate course codes (CS440, CS452, CS344) because those are the courses students actually reviewed on RMP. Graduate users will query using graduate codes (16:198:520, 16:198:513). The embedding model has no built-in knowledge that CS440 and 16:198:520 are the same course. A query like "what do students say about CS520?" may fail to retrieve Boularias reviews that only mention "CS440." Mitigation: each professor and course document explicitly cross-references both code sets (already done in the files), so chunks containing those cross-references will bridge the gap — but this should be verified during evaluation.
 
 ---
 
 ## Architecture
 
-<!-- Draw a diagram of your pipeline showing the five stages:
-     Document Ingestion → Chunking → Embedding + Vector Store → Retrieval → Generation
-     Label each stage with the tool or library you're using.
-     You can use ASCII art, a Mermaid diagram, or embed a sketch as an image.
-     You'll use this diagram as context when prompting AI tools to implement each stage. -->
+```
+┌─────────────────────┐     ┌──────────────────────┐     ┌───────────────────────────┐
+│  Document Ingestion │     │       Chunking        │     │  Embedding + Vector Store │
+│                     │     │                       │     │                           │
+│  Read all .txt      │────▶│  Strip noise lines    │────▶│  all-MiniLM-L6-v2         │
+│  files from         │     │  chunk_text()         │     │  (sentence-transformers)  │
+│  /documents/        │     │  500 chars            │     │                           │
+│                     │     │  100 char overlap     │     │  ChromaDB collection      │
+│  Python (pathlib)   │     │  + metadata tagging   │     │  cosine similarity        │
+└─────────────────────┘     └──────────────────────┘     └───────────────────────────┘
+                                                                        │
+                                                                        ▼
+                                                          ┌─────────────────────────┐
+                                                          │        Retrieval        │
+                                                          │                         │
+                                                          │  User query embedded    │
+                                                          │  ChromaDB similarity    │
+                                                          │  search, top-k = 5      │
+                                                          └─────────────────────────┘
+                                                                        │
+                                                                        ▼
+                                                          ┌─────────────────────────┐
+                                                          │       Generation        │
+                                                          │                         │
+                                                          │  Groq API               │
+                                                          │  (llama-3.3-70b)        │
+                                                          │  Grounded system prompt │
+                                                          │  + retrieved chunks     │
+                                                          │  → answer to user       │
+                                                          └─────────────────────────┘
+```
 
 ---
 
@@ -116,7 +137,10 @@ Student reviews and course information for the MS CS program at Rutgers Universi
      with my specified chunk size and overlap" is a plan. -->
 
 **Milestone 3 — Ingestion and chunking:**
+Tool: Claude. Input: the Chunking Strategy section of this file + the full text of `documents/professor_abdeslam_boularias.txt` as a sample document. Ask Claude to implement two functions: `preprocess(text)` that strips divider lines and structural labels, and `chunk_text(text, chunk_size=500, overlap=100)` that returns a list of character-sliced strings. Also ask it to implement `ingest_documents(docs_dir)` that reads every `.txt` file in a directory, runs preprocess + chunk_text on each, and returns a list of dicts with keys `text`, `source`, and `chunk_index`. Verify by printing the first 5 chunks of one document and checking that no chunk starts with `===` and that chunk lengths are within the expected range.
 
 **Milestone 4 — Embedding and retrieval:**
+Tool: Claude. Input: the Retrieval Approach section of this file + the output schema from `ingest_documents()` (list of dicts with `text`, `source`, `chunk_index`). Ask Claude to implement `embed_and_store(chunks)` that initializes a ChromaDB in-memory collection, embeds each chunk using `sentence-transformers/all-MiniLM-L6-v2`, and upserts with metadata. Also implement `retrieve(query, collection, k=5)` that embeds the query and returns the top-k matching chunks with their source filenames. Verify by running evaluation question 5 ("Is Mario Szegedy reliable?") and checking that at least 2 of the 5 returned chunks come from `professor_mario_szegedy.txt`.
 
 **Milestone 5 — Generation and interface:**
+Tool: Claude. Input: the full `planning.md` + the `retrieve()` function signature from Milestone 4. Ask Claude to implement `generate_answer(query, collection)` that calls `retrieve()`, formats the chunks into a context block, and calls the Groq API with a system prompt that instructs the model to answer only from the provided context and to cite the source document for each claim. Verify by running all 5 evaluation plan questions and checking responses against expected answers.
