@@ -42,6 +42,71 @@ Overlap of 100 characters handles the case where a multi-sentence review straddl
 
 ---
 
+## Sample Chunks
+
+Five representative chunks drawn from the corpus, showing the range of content types:
+
+**Chunk 1 — source: `course_513_algorithms.txt` (chunk 15)**
+```
+final grade distribution… Final is worth 40%" — grade drop at end of semester common
+- Professor matters enormously for this course — check the schedule before registering
+- Srikanta: proof-heavy, disorganized lectures but lenient partial credit; use TA office hours heavily
+- Szegedy: brilliant but low engagement; self-study from CLRS or MIT OCW 6.006/6.046; practice exams match real exams
+```
+*Type: course survival tips synthesized from RMP + Reddit — references both professors and their trade-offs.*
+
+**Chunk 2 — source: `professor_mario_szegedy.txt` (chunk 5)**
+```
+Rating: 1/5 | Difficulty: 4/5
+"Really unreliable professor. He missed the first month of classes… lectures are okay,
+homework isn't too bad. But I wouldn't recommend him to anyone."
+Thread: "How is Mario Szegedy for Comp Algo?"
+Username: CellistInternational — "Good. You won't fail. Unless you don't try."
+Username: Realistic_West_5862 — "nah bro wtf you mean. First day in class bro went off topic
+and gave the most bullshit assignment…"
+```
+*Type: mixed RMP review + Reddit thread about the same professor — captures both sentiment types in one chunk.*
+
+**Chunk 3 — source: `professor_abdeslam_boularias.txt` (chunk 8)**
+```
+NOTES:
+97% would take again — the highest in this profile set by a wide margin. Boularias is the
+consensus best professor for CS440/CS520 at Rutgers. If he is listed as instructor for Intro
+to AI in the semester you're enrolling, take it. The course is genuinely challenging (classical
+AI: search, CSP, Bayesian networks, planning) but his teaching makes the difficulty feel
+worthwhile. For MS students, this is the version of CS520 that actually prepares you for
+CS536 (Machine Learning).
+```
+*Type: aggregated editorial note synthesizing rating stats and cross-course implication.*
+
+**Chunk 4 — source: `course_520_intro_ai.txt` (chunk 13)**
+```
+- WHO teaches this course is the single most important variable — same content, wildly different experience
+- If Boularias is teaching: take it immediately, brush up on linear algebra and probability first
+- If Kulikowski is teaching: easy grade but you will not learn the AI foundations needed for CS536 (ML)
+- CS520 is a prerequisite for CS536 (Machine Learning) — treat it seriously if ML is your goal
+```
+*Type: direct student advice comparing two instructors teaching the same course.*
+
+**Chunk 5 — source: `professor_karthik_srikanta.txt` (chunk 0)**
+```
+PROFESSOR PROFILE — Karthik Srikanta
+Rutgers University, Department of Computer Science
+NAME: Karthik Srikanta
+TITLE: Assistant Professor
+RESEARCH AREAS: Theory of Computing, Algorithms, Complexity, Combinatorics
+RMP OVERALL RATING: 3.8 / 5.0
+RMP DIFFICULTY: 3.2 / 5.0
+RMP WOULD TAKE AGAIN: 69%
+RMP TOTAL RATINGS: 35
+COURSES KNOWN FOR TEACHING:
+- 16:198:513 — Design & Analysis of Data Structures & Algorithms I
+- 01:198:452 — Formal Language & Automata Theory (undergraduate)
+```
+*Type: metadata header chunk — contains rating stats and course codes but no review opinions. This chunk illustrates the retrieval limitation described in the Failure Case Analysis section.*
+
+---
+
 ## Embedding Model
 
 **Model used:** `all-MiniLM-L6-v2` via `sentence-transformers`
@@ -50,6 +115,54 @@ This model produces 384-dimensional embeddings, handles short opinion text well,
 
 **Production tradeoff reflection:**
 In a real deployment, I would evaluate `text-embedding-3-small` (OpenAI) or `instructor-xl` for better semantic capture of domain-specific terminology. Phrases like "NP-completeness," "PAC-learning," and "Bayesian networks" are treated as unknown tokens by general-purpose small models, which can weaken retrieval precision for technical course content. I would also evaluate whether the undergrad/grad course code mismatch (CS440 vs. 16:198:520) degrades recall, and consider a hybrid retrieval approach (BM25 + semantic) to catch exact course code matches that pure embedding search can miss. For multilingual support or international student communities, a multilingual-e5 model would be worth benchmarking. Latency is not a constraint for this local prototype, but an API-hosted model would matter for real users at scale.
+
+---
+
+## Retrieval Test Results
+
+Three evaluation queries run against the 115-chunk ChromaDB collection using cosine similarity (distance: lower = more similar; < 0.5 is good).
+
+---
+
+**Query A:** *"What do students say about Professor Srikanta's organization and grading in his algorithms course?"*
+
+| Rank | Source | Chunk index | Distance |
+|------|--------|-------------|----------|
+| 1 | course_513_algorithms.txt | 15 | 0.3535 |
+| 2 | professor_karthik_srikanta.txt | 0 | 0.4000 |
+| 3 | professor_mario_szegedy.txt | 1 | 0.4045 |
+| 4 | course_513_algorithms.txt | 9 | 0.4310 |
+| 5 | professor_mario_szegedy.txt | 2 | 0.4459 |
+
+*Why the top results are relevant:* Result 1 (distance 0.35) is the survival tips chunk from the course file that explicitly names "Srikanta: proof-heavy, disorganized lectures but lenient partial credit" — it directly answers the query. Result 2 is Srikanta's profile header, which matched because it contains his name and course codes. Results 3 and 5 (Szegedy) are cross-contamination: both professors teach CS513/algorithms, so Szegedy's chunks share vocabulary with the query. Their distances (0.40, 0.45) are meaningfully higher than Result 1, confirming the correct document ranked first — but the contamination still consumed two of five slots.
+
+---
+
+**Query B:** *"Which professor should I take for Intro to AI — Boularias or Kulikowski?"*
+
+| Rank | Source | Chunk index | Distance |
+|------|--------|-------------|----------|
+| 1 | professor_abdeslam_boularias.txt | 8 | 0.4313 |
+| 2 | course_520_intro_ai.txt | 13 | 0.4550 |
+| 3 | course_520_intro_ai.txt | 4 | 0.4698 |
+| 4 | professor_casimir_kulikowski.txt | 8 | 0.5062 |
+| 5 | course_520_intro_ai.txt | 12 | 0.5108 |
+
+*Why the top results are relevant:* Results 1–3 directly address the comparison. Result 1 is the "NOTES" section of Boularias's profile ("consensus best professor for CS440/CS520 at Rutgers"). Result 2 is the course_520 survival tips chunk that explicitly compares both professors side-by-side. Result 3 is the workload comparison table broken out by instructor. Results 4–5 cross the 0.5 threshold but are still on-topic — they discuss Kulikowski's effect on CS536 readiness, which is adjacent to the question.
+
+---
+
+**Query C:** *"Is Mario Szegedy a reliable professor — does he show up to class?"*
+
+| Rank | Source | Chunk index | Distance |
+|------|--------|-------------|----------|
+| 1 | professor_mario_szegedy.txt | 5 | 0.3779 |
+| 2 | professor_mario_szegedy.txt | 0 | 0.4357 |
+| 3 | course_513_algorithms.txt | 14 | 0.4381 |
+| 4 | course_520_intro_ai.txt | 8 | 0.4669 |
+| 5 | course_513_algorithms.txt | 13 | 0.4800 |
+
+3 of the top 5 results come from Szegedy's own documents. Result 1 (distance 0.38) contains the most direct evidence: "Really unreliable professor. He missed the first month of classes." This query passed the planning.md checkpoint of ≥ 2 results from the correct source file.
 
 ---
 
@@ -66,6 +179,81 @@ Temperature is set to 0.2 to reduce creative generation and keep the model close
 **How source attribution is surfaced in the response:**
 
 Attribution works at two levels. First, the LLM is instructed to cite source filenames inline within its answer. Second, `generate_answer()` programmatically deduplicates the source filenames from the retrieved chunks and appends a "Retrieved from" list regardless of whether the LLM remembered to cite them. This means attribution is guaranteed by the code, not left solely to the model. When tested with an out-of-scope question ("What is the average salary for Rutgers CS graduates?"), the system correctly declined to answer rather than generating a plausible-sounding salary figure from training data.
+
+---
+
+## Example Responses
+
+**Response 1 — grounded answer with inline citations**
+
+> **Query:** Which professor should I take for Intro to AI — Boularias or Kulikowski?
+>
+> **Answer:** You should take Boularias for Intro to AI. Boularias is considered the best professor for CS440/CS520 at Rutgers (source: professor_abdeslam_boularias.txt), and students who take his class genuinely learn the material (source: course_520_intro_ai.txt, professor_casimir_kulikowski.txt). In contrast, Kulikowski's class is described as an "easy A" but with "no substantive feedback" and "low effort" (source: course_520_intro_ai.txt, professor_casimir_kulikowski.txt), which can be damaging for MS students who need the AI foundations for CS536 (Machine Learning) (source: professor_casimir_kulikowski.txt).
+>
+> **Retrieved from:**
+> - professor_abdeslam_boularias.txt
+> - course_520_intro_ai.txt
+> - professor_casimir_kulikowski.txt
+
+Every claim in the answer cites its source document inline. The "Retrieved from" list is generated programmatically from the retrieved chunks, independent of the LLM's citation behavior.
+
+---
+
+**Response 2 — grounded answer with inline citations**
+
+> **Query:** Is Mario Szegedy a reliable professor — does he show up to class?
+>
+> **Answer:** According to the documents, Mario Szegedy is described as a "Really unreliable professor" who "missed the first month of classes" (source: professor_mario_szegedy.txt). Additionally, a student reported that on the "first day in class bro went off topic" (source: professor_mario_szegedy.txt), which further suggests that he may not be reliable in terms of showing up to class or staying on topic.
+>
+> **Retrieved from:**
+> - professor_mario_szegedy.txt
+> - course_513_algorithms.txt
+> - course_520_intro_ai.txt
+
+---
+
+**Response 3 — out-of-scope query showing refusal**
+
+> **Query:** What is the average salary for Rutgers CS graduates?
+>
+> **Answer:** I don't have enough information in my documents to answer that. Try asking about a professor or course covered in the guide.
+>
+> **Retrieved from:**
+> - course_527_database_systems.txt
+> - course_543_massive_data.txt
+> - professor_abdeslam_boularias.txt
+> - course_536_machine_learning.txt
+> - course_513_algorithms.txt
+
+The system retrieved the closest available documents (course files) but correctly declined to answer because none contained salary information. The LLM did not generate a plausible salary figure from training data — grounding held.
+
+---
+
+## Query Interface
+
+The interface is a Gradio web app (`app.py`) running at `http://localhost:7860`.
+
+**Input field:** A single text box labeled "Your question." Accepts any free-text question; submits on Enter or button click.
+
+**Output fields:**
+- *Answer* — the LLM's grounded response with inline source citations (e.g., `(source: professor_mario_szegedy.txt)`). 8-line text box, read-only.
+- *Retrieved from* — a programmatic list of the source filenames whose chunks were retrieved for this query, one per line with a bullet prefix. 4-line text box, read-only. This list is always present regardless of whether the LLM cited sources in its answer.
+
+**Sample interaction transcript:**
+
+```
+User input: What is the workload breakdown for CS527?
+
+Answer:
+The workload breakdown for CS527 (Database Systems for Data Science) is:
+Projects 40% | Exams 50% (source: course_527_database_systems.txt).
+
+Retrieved from:
+• course_527_database_systems.txt
+• course_543_massive_data.txt
+```
+
+The pipeline on each query: the question is embedded with `all-MiniLM-L6-v2`, the top-5 most similar chunks are retrieved from ChromaDB, the chunks are formatted into a labeled context block, and the Groq API (`llama-3.3-70b-versatile`, temperature 0.2) generates a grounded answer. Total latency per query is approximately 1–2 seconds.
 
 ---
 
